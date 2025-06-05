@@ -1,11 +1,12 @@
 import type { NextConfig } from 'next'
-
+ 
 const config: NextConfig = {
   images: {
+    dangerouslyAllowSVG: true,
     remotePatterns: [
       {
         protocol: 'https',
-        hostname: 'via.placeholder.com',
+        hostname: 'placehold.co', 
         port: '',
         pathname: '**',
         search: '',
@@ -13,5 +14,5 @@ const config: NextConfig = {
     ],
   },
 }
-
+ 
 export default config
